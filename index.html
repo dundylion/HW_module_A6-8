@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Home Work module A6-8 (Progressbar)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/d_styles.css">
+</head>
+<body>
+<p id="jqtester">jQuery not loaded</p>
+<header>
+	<div class="header">
+		<h1>Bootstrap progressbar demo</h1>
+	</div>
+</header>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<div class="progress">
+			  <div id="progress-bar" class="progress-bar bg-success" role="progressbar" style="width: 50%">50%
+			  </div>
+			</div>			
+		</div>
+		<div class="col-xs-2"></div>
+	</div>
+</div>
+
+<div class="centered">
+	<div class="btn-group centered" role="group" aria-label="Basic example">
+	  <button type="button" class="btn btn-primary" value="1">+1%</button>
+	  <button type="button" class="btn btn-primary" value="3">+3%</button>
+	  <button type="button" class="btn btn-primary" value="7">+7%</button>
+	</div>
+</div>
+<div class="centered">
+	<input id='reset' type="button" class="btn btn-primary" value="Reset"/>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/d_scripts.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+		function() {
+			$("#jqtester").text('JQuery seems to be working fine');
+			$('button').click(buttonpressed);
+			$('#reset').click(resetpressed);
+		})
+</script>
+</body>
+</html>
